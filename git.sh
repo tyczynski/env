@@ -3,6 +3,8 @@ git config --global user.name "Przemysław Tyczyński"
 git config --global user.email przemyslaw@tyczynski.pl
 git config --global core.editor "nano"
 git config --global core.ignoreCase false
+# https://git-scm.com/docs/git-config#Documentation/git-config.txt-pushautoSetupRemote
+git config --global push.autoSetupRemote true
 
 ## aliases
 git config --global alias.ame "commit --amend"
