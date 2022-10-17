@@ -14,4 +14,4 @@ git config --global alias.pfl "push --force-with-lease"
 git config --global alias.aliases '!f() { git config --global -l | grep alias | sort; }; f' # List all existing aliases, sorted alphabetically
 git config --global alias.cob "checkout -b" # Create and checkout a new branch
 git config --global alias.nuke 'reset --hard' # Discard all changes in working directory
-
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" # pretty log
