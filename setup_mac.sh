@@ -5,16 +5,16 @@
 
 # Install important packages
 brew install \\
-  wget \\  - curl alternative
-  exa  \\  - ls alternative
-  git  \\  - Git
-  nvm  \\  - Node.js Package Manager
-  gh   \\  - GitHub CLI
+  wget       \\  - curl alternative
+  exa        \\  - ls alternative
+  git        \\  - Git
+  nvm        \\  - Node.js Package Manager
+  gh         \\  - GitHub CLI
+  starship   \\  - shell prompt
 
-# Adjust terminal
-brew install zsh
-wget <https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh>
-sh install.s
+# Install znap to ease install zsh plugins
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-snap.git
+source zsh-snap/install.zsh
 
 # --- macOS config ---
 

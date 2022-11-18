@@ -2,6 +2,10 @@
 
 Auto configuration: `sh setup_mac.sh`
 
+## Terminal
+
+* FiraCode Nerd Font - https://www.nerdfonts.com/font-downloads
+
 ## Finder
 
 ### Shortcuts
