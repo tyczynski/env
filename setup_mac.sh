@@ -11,6 +11,7 @@ brew install \\
   nvm        \\  - Node.js Package Manager
   gh         \\  - GitHub CLI
   starship   \\  - shell prompt
+  deno       \\  - Deno Runtime
 
 # Install znap to ease install zsh plugins
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-snap.git
