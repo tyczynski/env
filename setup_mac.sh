@@ -27,3 +27,9 @@ defaults write com.apple.screencapture type jpg; killall SystemUIServer
 defaults write com.apple.finder AppleShowAllFiles YES
 
 killall Finder
+
+## Automations
+
+# Scheduled system reboot every monday about 3AM
+# sudo pmset repeat cancel
+sudo pmset repeat restart M 03:00:00
