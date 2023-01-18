@@ -7,8 +7,11 @@ git config --global core.ignoreCase false
 git config --global push.autoSetupRemote true
 
 ## aliases
-git config --global alias.ame "commit --amend"
-git config --global alias.ameh "commit --amend -C HEAD" # Add changes to last commit
+git config --global alias.cam "commit --amend"
+git config --global alias.camh "commit --amend -C HEAD" # Add changes to last commit
+git config --global alias.c "commit"
+git config --global alias.cm "commit -m"
+git config --global alias.cma "commit -a -m"
 git config --global alias.pf "push --force"
 git config --global alias.pfl "push --force-with-lease"
 git config --global alias.aliases '!f() { git config --global -l | grep alias | sort; }; f' # List all existing aliases, sorted alphabetically
