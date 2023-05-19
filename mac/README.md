@@ -1,0 +1,3 @@
+# macOS configuration
+
+TODO: ...
