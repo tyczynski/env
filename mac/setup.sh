@@ -1,34 +1,35 @@
-# --- apps ---
+# --- Homebrew ---
 
-# Install homebrew
+## Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Install important packages
+# Install packages
 brew install \\
-  wget       \\  - curl alternative
-  exa        \\  - ls alternative
   git        \\  - Git
   nvm        \\  - Node.js Package Manager
   gh         \\  - GitHub CLI
-  starship   \\  - shell prompt
-  deno       \\  - Deno Runtime
-
-# Install znap to ease install zsh plugins
-git clone --depth 1 -- https://github.com/marlonrichert/zsh-snap.git
-source zsh-snap/install.zsh
+  starship   \\  - Shell prompt
 
 # --- macOS config ---
 
-# remove shadow from screenshot (default false)
-defaults write com.apple.screencapture disable-shadow -bool true; killall SystemUIServer
-# save screeshots as jpeg (default png)
+## Remove shadow from screenshot (default false)
+defaults write com.apple.screencapture disable-shadow -bool true
+
+## Save screeshots as jpeg
 defaults write com.apple.screencapture type jpg; killall SystemUIServer
-# display hidden files
+
+## Display hidden files
 defaults write com.apple.finder AppleShowAllFiles YES
 
-killall Finder
+## Display the Dock immediately without delay
+defaults write com.apple.dock autohide-time-modifier -int 0
 
-## Automations
+### Apply changes
+killall SystemUIServer
+killall Finder
+killall Dock
+
+# --- Automations ---
 
 # Scheduled system reboot every monday about 3AM
 # sudo pmset repeat cancel
