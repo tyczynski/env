@@ -7,9 +7,7 @@
 brew install \\
   git        \\  - Git
   nvm        \\  - Node.js Package Manager
-  gh         \\  - GitHub CLI
-  starship   \\  - Shell prompt
-
+  
 # --- macOS config ---
 
 ## Remove shadow from screenshot (default false)
@@ -23,6 +21,9 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 ## Display the Dock immediately without delay
 defaults write com.apple.dock autohide-time-modifier -int 0
+
+## Speed up the trackpad
+defaults write .GlobalPreferences com.apple.mouse.scaling 8
 
 ### Apply changes
 killall SystemUIServer
