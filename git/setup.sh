@@ -1,20 +1,29 @@
 ## config
 git config --global user.name "Przemysław Tyczyński"
-git config --global user.email przemyslaw@tyczynski.pl
+git config --global user.email me@p8w.io
 git config --global core.editor "nano"
 git config --global core.ignoreCase false
 # https://git-scm.com/docs/git-config#Documentation/git-config.txt-pushautoSetupRemote
 git config --global push.autoSetupRemote true
 
 ## aliases
-git config --global alias.cam "commit --amend"
-git config --global alias.camh "commit --amend -C HEAD" # Add changes to last commit
-git config --global alias.c "commit"
+# (b)ranch (c)hange
+git config --global alias.bc branch
+# (b)ranch (s)witch
+git config --global alias.bs switch
+# (c)ommit
+git config --global alias.c commit
+# (c)ommit with (m)essage
 git config --global alias.cm "commit -m"
+# (c)ommit with (m)essage with (a)mend
 git config --global alias.cma "commit -a -m"
-git config --global alias.pf "push --force"
-git config --global alias.pfl "push --force-with-lease"
-git config --global alias.aliases '!f() { git config --global -l | grep alias | sort; }; f' # List all existing aliases, sorted alphabetically
-git config --global alias.cob "checkout -b" # Create and checkout a new branch
-git config --global alias.nuke 'reset --hard' # Discard all changes in working directory
-git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" # pretty log
+ # (c)ommit (a)mend to (h)ead
+git config --global alias.cah "commit --amend -C HEAD"
+
+# (p)ush
+git config --global alias.p push
+# (p)ush (f)orce (with lease as default because it is a better and safer approach)
+git config --global alias.p "push --force-with-lease"
+
+# (nuke) all changes in working directory
+git config --global alias.nuke 'reset --hard' 
