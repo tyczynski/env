@@ -7,10 +7,12 @@ git config --global core.ignoreCase false
 git config --global push.autoSetupRemote true
 
 ## aliases
-# (b)ranch (c)hange
+# (b)ranch (c)reate
 git config --global alias.bc branch
 # (b)ranch (s)witch
 git config --global alias.bs switch
+# (b)ranch (c)reate and (switch)
+git config --global alias.bcs "checkout -b"
 # (c)ommit
 git config --global alias.c commit
 # (c)ommit with (m)essage
@@ -26,4 +28,4 @@ git config --global alias.p push
 git config --global alias.p "push --force-with-lease"
 
 # (nuke) all changes in working directory
-git config --global alias.nuke 'reset --hard' 
+git config --global alias.nuke "reset --hard"
