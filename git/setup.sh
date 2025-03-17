@@ -3,8 +3,11 @@
 ###
 git config --global user.name "Przemysław Tyczyński"
 git config --global user.email me@p8w.io
+
 git config --global core.editor "nano"
 git config --global core.ignoreCase false
+git config --global core.excludesfile ~/.gitignore
+
 # https://git-scm.com/docs/git-config#Documentation/git-config.txt-pushautoSetupRemote
 git config --global push.autoSetupRemote true
 
