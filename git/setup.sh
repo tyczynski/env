@@ -15,7 +15,7 @@ git config --global push.autoSetupRemote true
 git config --global alias.bc branch
 # (b)ranch (s)witch
 git config --global alias.bs switch
-# (b)ranch (c)reate and (switch)
+# (b)ranch (c)reate and (s)witch
 git config --global alias.bcs "checkout -b"
 
 # (c)ommit
