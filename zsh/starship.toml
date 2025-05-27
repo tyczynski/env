@@ -1,2 +1,0 @@
-# Timeout for commands executed by starship (in milliseconds).
-command_timeout = 1000
