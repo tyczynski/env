@@ -5,4 +5,5 @@ sh ./mac/setup.sh
 sh ./zsh/setup.sh
 
 # --- Setup Git ---
-sh ./git/setup.sh
+cp ./git/.gitconfig ~/.gitconfig
+cp ./git/.gitignore ~/.gitignore

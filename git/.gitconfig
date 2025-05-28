@@ -1,0 +1,38 @@
+[user]
+	email = me@p8w.io
+	name = Przemysław Tyczyński
+
+[core]
+	editor = nano
+	ignoreCase = false
+	excludesfile = /Users/przemek/.gitignore
+
+[init]
+	defaultBranch = master
+
+[push]
+    # https://git-scm.com/docs/git-config#Documentation/git-config.txt-pushautoSetupRemote
+	autoSetupRemote = true
+
+[alias]
+    # (b)ranch (s)witch
+	bs = switch
+    # (b)ranch (s)witch and (c)reate
+	bsc = switch -c
+
+    # (c)ommit
+	c = commit
+    # (c)ommit with (m)essage
+	cm = commit -m
+    # (c)ommit with (m)essage - (a)mend
+	cma = commit -a -m
+    # (c)ommit (a)mend to (h)ead
+	cah = commit --amend -C HEAD
+
+    # (p)us(h)
+	ph = push
+    # (p)us(h) (f)orce 
+	phf = push --force-with-lease
+
+    # (p)ul(l) 
+	pl = pull
