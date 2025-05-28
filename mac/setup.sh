@@ -6,7 +6,6 @@
 # Install packages
 brew install \\
   git        \\  - Git
-  nvm        \\  - Node.js Package Manager
   
 # --- macOS config ---
 

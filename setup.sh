@@ -2,7 +2,7 @@
 sh ./mac/setup.sh
 
 # --- Setup zsh ---
-sh ./zsh/setup.sh
+cp ./zsh/.zshrc ~/.zshrc
 
 # --- Setup Git ---
 cp ./git/.gitconfig ~/.gitconfig
