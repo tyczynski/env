@@ -1,5 +1,6 @@
 # --- Setup macOS ---
-sh ./mac/setup.sh
+sh ./mac/system.sh
+sh ./mac/automations.sh
 
 # --- Setup zsh ---
 cp ./zsh/.zshrc ~/.zshrc
