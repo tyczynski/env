@@ -10,16 +10,6 @@ brew install \\
   git        \\
   
 ###
-##  Screenshots
-###
-
-## Remove shadow from screenshot (default false)
-defaults write com.apple.screencapture disable-shadow -bool true
-
-## Save screeshots as jpeg
-defaults write com.apple.screencapture type jpg
-
-###
 ##  Finder
 ###
 
