@@ -17,7 +17,7 @@ brew install \\
 defaults write com.apple.screencapture disable-shadow -bool true
 
 ## Save screeshots as jpeg
-defaults write com.apple.screencapture type jpg; killall SystemUIServer
+defaults write com.apple.screencapture type jpg
 
 ###
 ##  Finder
